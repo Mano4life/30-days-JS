@@ -1,4 +1,4 @@
-# 30-days-JS
+# 30-days-JS (still in progress)
 LINKS >>>>
 - [ToDoList](https://mano4life.github.io/30-days-JS/no1_To-Do%20list/)
 - [QuizApp](https://mano4life.github.io/30-days-JS/no2_QuizApp/)
