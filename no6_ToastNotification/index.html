@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="buttons">
+        <button onclick="AddToast(Msg[0])">success</button>
+        <button onclick="AddToast(Msg[1])">error</button>
+        <button onclick="AddToast(Msg[2])">invalid</button>
+    </div>
+
+    <div id="toast-container"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
