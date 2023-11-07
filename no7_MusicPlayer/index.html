@@ -24,11 +24,11 @@
           </div>
         </nav>
         <img src="media/cover.jpg" alt="cover" class="song-img" id="song-img" />
-        <h1>Invincible</h1>
-        <p>Skillet</p>
+        <h1 id="title">Invincible</h1>
+        <p id="singer">Skillet</p>
 
         <audio id="song">
-          <source src="media/Skillet-FeelInvincible.m4a" type="audio/mpeg">
+          <source src="media/Skillet-FeelInvincible.m4a" type="audio/mpeg" id="song-source">
         </audio>
 
         <input type="range" value="0" id="progress" />
@@ -47,9 +47,9 @@
         </div>
         
         <div class="controls">
-          <div><i class="fa-solid fa-backward"></i></div>
+          <div><i class="fa-solid fa-backward" id="prevBtn"></i></div>
           <div><i class="fa-solid fa-play" id="playBtn"></i></div>
-          <div><i class="fa-solid fa-forward"></i></div>
+          <div><i class="fa-solid fa-forward" id="nextBtn"></i></div>
         </div>
       </div>
     </div>
