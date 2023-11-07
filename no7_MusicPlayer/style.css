@@ -169,6 +169,7 @@ nav .icon-container:hover,
   width: 150px;
   height: 40px;
   padding: 10px;
+  position: relative;
   margin-inline: auto;
   border-radius: 25px;
   background-color: #616161;
@@ -178,9 +179,8 @@ nav .icon-container:hover,
   align-items: center;
   margin-bottom: 1rem;
   gap: 10px;
-  transition: 0.3s;
   cursor: pointer;
-  position: relative;
+  transition: 0.3s;
 }
 
 .vol-container.hide {
