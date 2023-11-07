@@ -28,28 +28,37 @@
         <p id="singer">Skillet</p>
 
         <audio id="song">
-          <source src="media/Skillet-FeelInvincible.m4a" type="audio/mpeg" id="song-source">
+          <source
+            src="media/Skillet-FeelInvincible.m4a"
+            type="audio/mpeg"
+            id="song-source"
+          />
         </audio>
-
-        <input type="range" value="0" id="progress" />
-        <div class="vol-container">
-            <span>0%</span>
-            <input
+        <div class="progress-bar">
+          <span id="current-time">0:00</span>
+          <input type="range" value="0" id="progress" />
+          <span id="duration">0:00</span>
+        </div>
+        <div class="vol-container hide" id="vol-container">
+          <i class="fa-solid fa-volume-high" id="volume-button"></i>
+          <input
             type="range"
             id="volume"
             min="0"
             max="1"
             step="0.1"
-            value="0.5"
-            onchange="setVolume()"
-            />
-            <span>100%</span>
+            value="1"
+          />
         </div>
-        
+
         <div class="controls">
-          <div><i class="fa-solid fa-backward" id="prevBtn"></i></div>
-          <div><i class="fa-solid fa-play" id="playBtn"></i></div>
-          <div><i class="fa-solid fa-forward" id="nextBtn"></i></div>
+          <div class="btn">
+            <i class="fa-solid fa-backward" id="prevBtn"></i>
+          </div>
+          <div class="btn"><i class="fa-solid fa-play" id="playBtn"></i></div>
+          <div class="btn">
+            <i class="fa-solid fa-forward" id="nextBtn"></i>
+          </div>
         </div>
       </div>
     </div>
