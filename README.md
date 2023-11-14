@@ -7,3 +7,4 @@ LINKS >>>>
 - [QRgenerator](https://mano4life.github.io/30-days-JS/no5_QRgenerator/)
 - [Toast](https://mano4life.github.io/30-days-JS/no6_ToastNotification)
 - [MusicPlayer](https://mano4life.github.io/30-days-JS/no7_MusicPlayer)
+- [Stop Watch](https://mano4life.github.io/30-days-JS/no8_StopWatch)
