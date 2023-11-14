@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier Prime", monospace;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-wrapper {
+  width: 600px;
+  height: 400px;
+  background-color: #333;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #333;
+  position: relative;
+}
+
+.watch-wrapper h1 {
+  color: #ddd;
+  font-size: 3rem;
+  margin-top: 4rem;
+  letter-spacing: 5px;
+}
+
+.flagged-time-container {
+    margin-top: 2rem;
+    height: 4rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.watch-wrapper #flagged-time {
+    color: #ccc;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 8px;
+    font-size: 1.2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.controls button {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  color: #333;
+  background-color: red;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  opacity: .6;
+  transition: 0.2s;
+}
+
+.controls button:hover {
+    scale: 1.05;
+    opacity: 1;
+}
+
+.controls button:active {
+    scale: 0.8;
+}
+
+.controls #play {
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+}
+
+#flag {
+    position: absolute;
+    top: 4.5rem;
+    right: 2.5rem;
+}

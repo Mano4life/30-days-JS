@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="watch-wrapper">
+      <h1 id="time">00:00:00</h1>
+      <section class="flagged-time-container" id="flagged-time-container">
+        <!-- <h3 id="flagged-time">one</h3>
+        <h3 id="flagged-time">two</h3>
+        <h3 id="flagged-time">three</h3> -->
+      </section>
+      <section class="controls">
+        <button id="stop" onclick="stopWatch()">
+          <i class="fa-solid fa-stop"></i>
+        </button>
+        <button id="play" onclick="startWatch()">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <button id="pause" onclick="pauseWatch()">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+        <button id="flag" onclick="flag()">
+            <i class="fa-solid fa-stopwatch"></i>
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
