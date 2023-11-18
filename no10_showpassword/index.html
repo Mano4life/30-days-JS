@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>show/hide password</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <input
+        type="password"
+        id="input-field"
+        class="input-field"
+        placeholder="password..."
+      />
+      <i id="icon" class="fa-solid fa-eye-slash"></i>
+    </main>
+
+    <script>
+      let input = document.getElementById("input-field");
+      let icon = document.getElementById("icon");
+
+      icon.onclick = () => {
+        if (input.type == "password") {
+          input.type = "text";
+          icon.setAttribute("class", "fa-solid fa-eye");
+          console.log("text")
+        } else {
+          input.type = "password";
+          icon.setAttribute("class", "fa-solid fa-eye-slash");
+          console.log("password")
+        }
+      };
+    </script>
+  </body>
+</html>
