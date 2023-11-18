@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Popup</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <body>
     <main class="container">
-        <button class="submit">submit</button>
+      <button class="submit" onclick="openPopup()">submit</button>
+      <section class="popup" id="popup">
+        <lottie-player
+          src="done-animation.json"
+          background="transparent"
+          speed="1"
+          class="done-animation"
+        ></lottie-player>
+        <h2 class="title">Thank You!</h2>
+        <p class="subtitle">
+          Your details have been successfully submitted. Thanks!
+        </p>
+        <button class="ok-btn" onclick="closePopup()">OK</button>
+      </section>
     </main>
-</body>
+
+    <script>
+      let popup = document.getElementById("popup");
+      let animation = document.querySelector("lottie-player");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+        animation.play();
+      }
+
+      function closePopup() {
+        popup.classList.remove("open-popup");
+        animation.stop();
+      }
+    </script>
+  </body>
 </html>
