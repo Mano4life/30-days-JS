@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -88,4 +89,11 @@
 
 .popup .ok-btn:hover {
   filter: brightness(1.2);
+}
+
+
+@media (width < 425px) {
+  .popup {
+    width: 90%;
+  }
 }
