@@ -13,7 +13,7 @@ let messageField = document.getElementById("message-field");
 nameField.onkeyup = () => {
   let name = nameField.value;
 
-  if (name.length == 0) {
+  if (name.length === 0) {
     nameError.innerHTML = "name is required";
   } else if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
     nameError.innerHTML = "write full name";
@@ -35,3 +35,45 @@ phoneField.onkeyup = () => {
     phoneError.innerHTML = `<i class="fa-solid fa-check"></i>`;
   }
 };
+
+emailField.onkeyup = () => {
+  let email = emailField.value;
+
+  if (email.length === 0) {
+    emailError.innerHTML = "email is required";
+  } else if (
+    !/^[A-Za-z][A-Za-z0-9._-]*@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/.test(email)
+  ) {
+    emailError.innerHTML = "email is invalid";
+  } else {
+    emailError.innerHTML = `<i class="fa-solid fa-check"></i>`;
+  }
+};
+
+messageField.onkeyup = () => {
+  let message = messageField.value;
+  let required = 15;
+  let left = required - message.length;
+
+  if (left > 0) {
+    messageError.innerHTML = left + "more characters required";
+  } else {
+    messageError.innerHTML = `<i class="fa-solid fa-check"></i>`;
+  }
+};
+
+function validateForms() {
+  if (
+    !nameField.onkeyup() ||
+    !phoneField.onkeyup() ||
+    !emailField.onkeyup() ||
+    !messageField.onkeyup()
+  ) {
+    submitError.style.display = "block";
+    submitError.innerHTML = "Please fix the error before submitting";
+    setTimeout(() => {
+      submitError.style.display = "none";
+    }, 2000);
+    return false;
+  }
+}
