@@ -8,14 +8,45 @@
   </head>
   <body>
     <section class="hero">
-        <h3>Coming soon!</h3>
-        <h1>our brand new <br> website is on its way</h1>
-        <p>subscribe for more details.</p>
-        <form>
-            <input type="email" name="Email" placeholder="email address..." required>
-            <button type="submit"><img src="media/send-icon.png" alt="send..." width="30px"></button>
-        </form>
-        <span>thank you for subscribing!</span>
+      <h3>Coming soon!</h3>
+      <h1>
+        our brand new <br />
+        website is on its way
+      </h1>
+      <p>subscribe for more details.</p>
+      <form name="submit-to-google-sheet">
+        <input
+          type="email"
+          name="Email"
+          placeholder="email address..."
+          required
+        />
+        <button type="submit">
+          <img src="media/send-icon.png" alt="send..." width="30px" />
+        </button>
+      </form>
+      <span id="msg"></span>
     </section>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyAFGdMdr7Br7pPI2yczejIDjyRYnrbVbHF0Hi5A7i3EeQFcdanWsz9zdR_VvGpc3QQpw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        msg.innerHTML = "Processing...";
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "done, thank you for subscribing!";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
