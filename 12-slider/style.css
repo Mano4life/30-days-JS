@@ -59,3 +59,44 @@ body {
 #next:hover {
   transform: scale(1.1);
 }
+
+@media (width < 700px) {
+  body {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    margin: 0;
+  }
+
+  .gallery-wrapper {
+    width: 90%;
+  }
+
+  .gallery {
+    display: flex;
+    grid-template-columns: none;
+    gap: 10px;
+    flex: initial;
+  }
+
+  .gallery span {
+    width: 100%;
+  }
+
+  .gallery img {
+    width: initial;
+  }
+
+  #back,
+  #next {
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+}
