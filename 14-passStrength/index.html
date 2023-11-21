@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>password strength</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <section class="input-container">
+        <input
+          type="password"
+          class="input"
+          id="input"
+          placeholder="Password..."
+        />
+        <div class="button-container">
+          <button type="submit" id="btn" class="btn">
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+          <button type="submit" id="eye-btn" class="btn eye-btn">
+            <i class="fa-solid fa-eye-slash" id="eye"></i>
+          </button>
+        </div>
+        <span id="msg" class="msg"
+          >your password is <span class="str" id="str"></span
+        ></span>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
