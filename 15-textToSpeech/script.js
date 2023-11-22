@@ -6,15 +6,10 @@ let voices = [];
 
 let x = 0;
 
-
-// playing voice by clicking the play button
+// playing voice by clicking the play button (in process of adding pause option). 
 playBtn.addEventListener("click", () => {
-    const testText = "hello, this is a test"
-    speech.text = testText;
-    // speech.text = txt.value;
-    console.log(x++);
-    console.log(window.speechSynthesis.getVoices());
-    window.speechSynthesis.speak(speech);
+  speech.text = txt.value;
+  window.speechSynthesis.speak(speech);
 });
 
 // capturing device voices and adding them to select.
@@ -29,5 +24,5 @@ window.speechSynthesis.onvoiceschanged = () => {
 
 // changing the voice based on user selection.
 select.addEventListener("change", () => {
-    speech.voice = voices[select.value];
-})
+  speech.voice = voices[select.value];
+});
