@@ -14,3 +14,4 @@ LINKS >>>>
 - [12-image slide](https://mano4life.github.io/30-days-JS/12-slider/)
 - [13-google sheet subscription](https://mano4life.github.io/30-days-JS/13-subscription/)
 - [14-password strength checker](https://mano4life.github.io/30-days-JS/14-passStrength/)
+- [15- text to speech](https://mano4life.github.io/30-days-JS/15-textToSpeech/)
