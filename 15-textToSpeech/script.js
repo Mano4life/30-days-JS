@@ -13,14 +13,24 @@ playBtn.addEventListener("click", () => {
 });
 
 // capturing device voices and adding them to select.
-window.speechSynthesis.onvoiceschanged = () => {
+window.addEventListener("load", () => {
   // capturing voices on device.
   voices = window.speechSynthesis.getVoices();
   // default voice.
   speech.voice = voices[0];
   // adding them to select.
   voices.forEach((voice, i) => (select.options[i] = new Option(voice.name, i)));
-};
+  window.speechSynthesis.onvoiceschanged = () => {
+    // capturing voices on device.
+    voices = window.speechSynthesis.getVoices();
+    // default voice.
+    speech.voice = voices[0];
+    // adding them to select.
+    voices.forEach(
+      (voice, i) => (select.options[i] = new Option(voice.name, i))
+    );
+  };
+});
 
 // changing the voice based on user selection.
 select.addEventListener("change", () => {
