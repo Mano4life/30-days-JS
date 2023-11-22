@@ -6,7 +6,7 @@ let voices = [];
 
 let x = 0;
 
-// playing voice by clicking the play button (in process of adding pause option). 
+// playing voice by clicking the play button (in process of adding pause option).
 playBtn.addEventListener("click", () => {
   speech.text = txt.value;
   window.speechSynthesis.speak(speech);
