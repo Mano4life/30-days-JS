@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #000088, #490049);
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.container h1 span {
+    color: crimson;
+}
+
+.container textarea {
+    padding: 10px 20px;
+    background-color: #403d84;
+    width: 600px;
+    max-width: 90%;
+    height: 300px;
+    resize: none;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.container textarea::placeholder {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.tools {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    width: 600px;
+    max-width: 90%;
+}
+
+.tools button {
+    all: unset;
+    background-color: crimson;
+    color: #fff;
+    padding: .6rem 2rem;
+    border-radius: 25px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tools button:hover,
+.tools button:active {
+    filter: brightness(1.5);
+}
+
+.select-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.select-wrapper i {
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.tools select {
+    width: 100%;
+    background-color: #403d84;
+    color: #fff;
+    height: 50px;
+    padding: 0 1.3rem;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    appearance: none;
+    background-size: 15px;
+    cursor: pointer;
+}
+
+
+@media (width < 650px) {
+    .container h1{
+        font-size: 35px;
+    }
+}
+
+@media (width < 600px) {
+    .container {
+        text-align: center;
+    }
+
+    .tools {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .select-wrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text to speech</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>text to speech <span>converter</span></h1>
+      <textarea
+        class="txt"
+        id="txt"
+        cols="30"
+        rows="10"
+        placeholder="type your text here..."
+      ></textarea>
+      <div class="tools">
+        <div class="select-wrapper">
+          <select id="select"></select>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <button id="play-btn"><i class="fa-solid fa-play"></i>listen</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
