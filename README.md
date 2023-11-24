@@ -15,3 +15,5 @@ LINKS >>>>
 - [13-google sheet subscription](https://mano4life.github.io/30-days-JS/13-subscription/)
 - [14-password strength checker](https://mano4life.github.io/30-days-JS/14-passStrength/)
 - [15- text to speech](https://mano4life.github.io/30-days-JS/15-textToSpeech/)
+- [16-launching soon LP](https://mano4life.github.io/30-days-JS/16-launchingSoon/)
+- [17-mini calender](https://mano4life.github.io/30-days-JS/17-miniCalender/)
