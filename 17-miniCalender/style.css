@@ -1,15 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    width: 100%;
-    min-height: 100svh;
-    background: linear-gradient(45deg, #1d0000, #20205b);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 100svh;
+  background: linear-gradient(45deg, #1d0000, #20205b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calender {
+  width: 300px;
+  height: 250px;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+}
+
+.left-side,
+.right-side {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.right-side {
+  width: 42%;
+  border-radius: 0 10px 10px 0;
+  background: #f4351e;
+  color: #fff;
+}
+
+.left-side {
+  width: 58%;
+}
+
+#date {
+  font-size: 100px;
+  line-height: 90px;
+}
+
+#month {
+  font-size: 22px;
 }
