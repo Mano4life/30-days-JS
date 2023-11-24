@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100svh;
+    background: linear-gradient(45deg, #1d0000, #20205b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
