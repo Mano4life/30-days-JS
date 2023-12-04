@@ -3,20 +3,41 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   background: #e3edf7;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100svh;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(3, auto);
+  gap: 1rem;
+}
+
+.reset {
+  all: unset;
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  padding: 1rem 2rem;
+  background-color: #555;
+  border-radius: 25px;
+  color: #e3edf7;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.2s;
+}
+
+.reset:hover {
+  filter: brightness(1.2) drop-shadow(1px 1px 10px grey);
 }
 
 .skill {
   width: 160px;
   height: 160px;
-  /* background: cornflowerblue; */
   position: relative;
 }
 
@@ -42,9 +63,9 @@ body {
     0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 }
 
-#number {
+.number {
   text-align: center;
-  font-weight: 600px;
+  font-weight: 600;
   color: #555;
 }
 
@@ -54,7 +75,18 @@ circle {
     stroke-width: 20px;
     stroke-dasharray: 472;
     stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
+}
+
+#first {
+  animation: first 2s linear forwards;
+}
+#second {
+  animation: second 2s linear forwards;
+
+}
+#third {
+  animation: third 2s linear forwards;
+
 }
 
 svg {
@@ -63,8 +95,26 @@ svg {
     left: 0;
 }
 
-@keyframes anim {
+@keyframes first {
+    100% {
+        stroke-dashoffset: 330;
+    }
+}
+@keyframes second {
     100% {
         stroke-dashoffset: 165;
     }
+}
+@keyframes third {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@media (width < 425px) {
+  body {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: none;
+    place-content: center;
+  }
 }

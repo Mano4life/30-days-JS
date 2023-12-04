@@ -18,3 +18,4 @@ LINKS >>>>
 - [16-launching soon LP](https://mano4life.github.io/30-days-JS/16-launchingSoon/)
 - [17-mini calender](https://mano4life.github.io/30-days-JS/17-miniCalender/)
 - [18-select menu](https://mano4life.github.io/30-days-JS/18-selectMenu/)
+- [19-progress bar](https://mano4life.github.io/30-days-JS/19-progressBar/)
