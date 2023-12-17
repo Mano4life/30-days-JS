@@ -21,3 +21,4 @@ LINKS >>>>
 - [19-progress bar](https://mano4life.github.io/30-days-JS/19-progressBar/)
 - [20-product card](https://mano4life.github.io/30-days-JS/20-productCard/)
 - [21-crypto currency](https://mano4life.github.io/30-days-JS/21-CryptoCurrency/)
+- [22-Digital Clock](https://mano4life.github.io/30-days-JS/22-digitalClock/)
